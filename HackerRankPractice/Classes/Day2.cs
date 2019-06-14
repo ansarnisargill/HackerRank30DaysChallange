@@ -12,7 +12,7 @@ using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 using System.Text;
 using System;
-namespace HackerRankPractice
+namespace HackerRankPractice.Classes
 {
     public class SolutionDay2
     {
@@ -22,13 +22,13 @@ namespace HackerRankPractice
         {
             var tip = meal_cost * (tip_percent / 100.0);
             var tax = meal_cost * (tax_percent / 100.0);
-            var total_cost = Math.Round(meal_cost + tip + tax,0);
+            var total_cost = Math.Round(meal_cost + tip + tax, 0);
             Console.WriteLine(total_cost);
             Console.Read();
 
         }
 
-        
+
         public SolutionDay2()
         {
             Console.WriteLine("Enter Meal Cost");
